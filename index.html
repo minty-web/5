@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pothos — Tiny habits, one very happy plant</title>
+  <meta name="description" content="Pothos turns four tiny daily habits into a plant that grows leaf by leaf. Tick a habit, watch it grow. Miss a day and it simply naps.">
+  <meta name="theme-color" content="#eafaf1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pothos — Tiny habits, one very happy plant">
+  <meta property="og:description" content="A habit app where your streak is a plant. Try the demo. A concept site.">
+  <meta property="og:image" content="https://minty-web.github.io/5/preview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;family=DM+Sans:opsz,wght@9..40,400..700&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Pothos, back to top">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16 29V15" stroke="#0f3d2e" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M16 17C9 17 5 12 5 5c7 0 11 4 11 12Z" fill="#2f9e6f"/>
+          <path d="M16 15c0-6 4-10 11-10 0 6-4 10-11 10Z" fill="#7fe0b0"/>
+        </svg>
+        pothos
+      </a>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#demo">Try it</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-green header-cta" href="#download">Get the app</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero + live demo -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="leaves" aria-hidden="true">
+        <svg class="float-leaf fl-1" viewBox="0 0 40 24"><path d="M0 12C8 0 30 0 40 12 30 24 8 24 0 12Z"/></svg>
+        <svg class="float-leaf fl-2" viewBox="0 0 40 24"><path d="M0 12C8 0 30 0 40 12 30 24 8 24 0 12Z"/></svg>
+        <svg class="float-leaf fl-3" viewBox="0 0 40 24"><path d="M0 12C8 0 30 0 40 12 30 24 8 24 0 12Z"/></svg>
+        <svg class="float-leaf fl-4" viewBox="0 0 40 24"><path d="M0 12C8 0 30 0 40 12 30 24 8 24 0 12Z"/></svg>
+        <svg class="float-leaf fl-5" viewBox="0 0 40 24"><path d="M0 12C8 0 30 0 40 12 30 24 8 24 0 12Z"/></svg>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="badge"><span>New</span> Shared gardens with friends</p>
+          <h1 class="hero-title" id="hero-title">Tiny habits. One very <span class="swash">happy plant.</span></h1>
+          <p class="hero-lede">
+            Pick up to four tiny habits. Every one you tick grows your plant a
+            little. Miss a day and it doesn’t die, it just naps.
+          </p>
+          <div class="store-buttons">
+            <a class="store-btn" href="#download">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4"/></svg>
+              <span><small>Get it for</small>iPhone</span>
+            </a>
+            <a class="store-btn store-btn-light" href="#download">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 9h10v8a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2Z"/><path d="M7 9a5 5 0 0 1 10 0M9 4 8 2.5M15 4l1-1.5"/></svg>
+              <span><small>Get it for</small>Android</span>
+            </a>
+          </div>
+          <p class="rating">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <span><strong>4.9</strong> from 12,400 ratings · free to start</span>
+          </p>
+        </div>
+
+        <div class="demo" id="demo">
+          <p class="try-note" aria-hidden="true">
+            Try it! Tick a habit
+            <svg viewBox="0 0 60 40"><path d="M4 6c18 2 34 10 44 26m0 0-2-12m2 12-11-4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </p>
+
+          <div class="phone">
+            <div class="phone-screen">
+              <div class="status-bar" aria-hidden="true">
+                <span>9:41</span>
+                <span class="status-icons"><i></i><i></i><i></i></span>
+              </div>
+
+              <div class="app-head">
+                <div>
+                  <p class="greeting" data-greeting>Good morning</p>
+                  <p class="app-date" data-date>Today</p>
+                </div>
+                <p class="streak" aria-live="polite">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c1 4 6 6 6 12a6 6 0 0 1-12 0c0-3 2-5 3-6 0 2 1 3 2 3 0-3-1-6 1-9Z"/></svg>
+                  <span><strong data-streak>12</strong> day streak</span>
+                </p>
+              </div>
+
+              <div class="plant-card">
+                <svg class="ring" viewBox="0 0 44 44" aria-hidden="true">
+                  <circle cx="22" cy="22" r="18" fill="none" stroke="#d8f3e5" stroke-width="5"/>
+                  <circle class="ring-fill" cx="22" cy="22" r="18" fill="none" stroke="#2f9e6f" stroke-width="5" stroke-linecap="round" transform="rotate(-90 22 22)"/>
+                </svg>
+                <p class="ring-text" aria-hidden="true"><span data-done>0</span>/4</p>
+
+                <svg class="plant" viewBox="0 0 200 220" role="img" aria-labelledby="plant-label">
+                  <title id="plant-label">Your plant</title>
+                  <ellipse cx="100" cy="212" rx="62" ry="6" fill="#0f3d2e" opacity=".08"/>
+                  <path class="stem" d="M100 158C100 136 96 118 100 100s-2-24 0-38" fill="none" stroke="#2f9e6f" stroke-width="6" stroke-linecap="round"/>
+                  <g transform="translate(100 140) rotate(-158)"><path class="leaf" data-stage="1" d="M0 0C10-14 32-14 44 0 32 12 10 12 0 0Z" fill="#2f9e6f"/></g>
+                  <g transform="translate(100 134) rotate(-24)"><path class="leaf" data-stage="1" d="M0 0C10-14 32-14 44 0 32 12 10 12 0 0Z" fill="#7fe0b0"/></g>
+                  <g transform="translate(99 116) rotate(-150)"><path class="leaf" data-stage="2" d="M0 0C10-15 34-15 48 0 34 13 10 13 0 0Z" fill="#7fe0b0"/></g>
+                  <g transform="translate(100 108) rotate(-30)"><path class="leaf" data-stage="2" d="M0 0C10-15 34-15 48 0 34 13 10 13 0 0Z" fill="#2f9e6f"/></g>
+                  <g transform="translate(100 92) rotate(-140)"><path class="leaf" data-stage="3" d="M0 0C9-13 28-13 40 0 28 11 9 11 0 0Z" fill="#2f9e6f"/></g>
+                  <g transform="translate(100 84) rotate(-40)"><path class="leaf" data-stage="3" d="M0 0C9-13 28-13 40 0 28 11 9 11 0 0Z" fill="#7fe0b0"/></g>
+                  <g transform="translate(100 60)">
+                    <g class="flower" data-stage="4">
+                      <ellipse cx="0" cy="-13" rx="7" ry="12" fill="#ffd65c"/>
+                      <ellipse cx="0" cy="-13" rx="7" ry="12" fill="#ffd65c" transform="rotate(60)"/>
+                      <ellipse cx="0" cy="-13" rx="7" ry="12" fill="#ffd65c" transform="rotate(120)"/>
+                      <ellipse cx="0" cy="-13" rx="7" ry="12" fill="#ffd65c" transform="rotate(180)"/>
+                      <ellipse cx="0" cy="-13" rx="7" ry="12" fill="#ffd65c" transform="rotate(240)"/>
+                      <ellipse cx="0" cy="-13" rx="7" ry="12" fill="#ffd65c" transform="rotate(300)"/>
+                      <circle r="8" fill="#ff7a59"/>
+                    </g>
+                  </g>
+                  <ellipse class="seed" cx="100" cy="155" rx="6" ry="4" fill="#8a6a50"/>
+                  <!-- pot -->
+                  <path d="M62 166h76l-9 44H71Z" fill="#ff7a59"/>
+                  <path d="M62 166h76l-2 9H64Z" fill="#0f3d2e" opacity=".12"/>
+                  <rect x="56" y="152" width="88" height="16" rx="7" fill="#ff9a7f"/>
+                  <ellipse cx="100" cy="155" rx="36" ry="4" fill="#6b4f3a" opacity=".7"/>
+                  <!-- face -->
+                  <g class="face">
+                    <circle class="cheek" cx="80" cy="193" r="5" fill="#ff5c7a" opacity=".45"/>
+                    <circle class="cheek" cx="120" cy="193" r="5" fill="#ff5c7a" opacity=".45"/>
+                    <circle cx="88" cy="186" r="2.6" fill="#0f3d2e"/>
+                    <circle cx="112" cy="186" r="2.6" fill="#0f3d2e"/>
+                    <path class="mouth mouth-flat" d="M95 195h10" fill="none" stroke="#0f3d2e" stroke-width="2.4" stroke-linecap="round"/>
+                    <path class="mouth mouth-happy" d="M93 193c4 5 10 5 14 0" fill="none" stroke="#0f3d2e" stroke-width="2.4" stroke-linecap="round"/>
+                  </g>
+                </svg>
+                <p class="plant-status" data-plant-status aria-live="polite">Your plant is waiting for its first habit.</p>
+              </div>
+
+              <fieldset class="habits">
+                <legend class="sr-only">Today’s habits</legend>
+                <label class="habit">
+                  <input type="checkbox" name="habit" value="water">
+                  <span class="habit-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11Z"/></svg>
+                  </span>
+                  <span class="habit-text">Drink a glass of water</span>
+                  <span class="check" aria-hidden="true"></span>
+                </label>
+                <label class="habit">
+                  <input type="checkbox" name="habit" value="read">
+                  <span class="habit-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M3 5h7a2 2 0 0 1 2 2v12a2 2 0 0 0-2-2H3ZM21 5h-7a2 2 0 0 0-2 2v12a2 2 0 0 1 2-2h7Z"/></svg>
+                  </span>
+                  <span class="habit-text">Read five pages</span>
+                  <span class="check" aria-hidden="true"></span>
+                </label>
+                <label class="habit">
+                  <input type="checkbox" name="habit" value="stretch">
+                  <span class="habit-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><path d="M4 9l8 2 8-2M12 11v5l-4 5M12 16l4 5"/></svg>
+                  </span>
+                  <span class="habit-text">Stretch for two minutes</span>
+                  <span class="check" aria-hidden="true"></span>
+                </label>
+                <label class="habit">
+                  <input type="checkbox" name="habit" value="text">
+                  <span class="habit-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4Z"/></svg>
+                  </span>
+                  <span class="habit-text">Text someone you love</span>
+                  <span class="check" aria-hidden="true"></span>
+                </label>
+              </fieldset>
+
+              <button class="reset" type="button" data-reset hidden>Start a new day</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <canvas class="confetti" aria-hidden="true" data-confetti></canvas>
+    </section>
+
+    <!-- How it works -->
+    <section class="section" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">How it works</p>
+          <h2 id="how-title">Ten seconds a day. That’s it.</h2>
+        </header>
+        <ol class="how-grid">
+          <li class="how-card" data-reveal>
+            <span class="how-num">1</span>
+            <h3>Pick four tiny habits</h3>
+            <p>Small enough to do on your worst day: a glass of water, five pages, one stretch.</p>
+          </li>
+          <li class="how-card how-card-butter" data-reveal style="--delay: 100ms">
+            <span class="how-num">2</span>
+            <h3>Tick them off</h3>
+            <p>From the app or straight from your home screen. No timers, no journaling, no guilt.</p>
+          </li>
+          <li class="how-card how-card-coral" data-reveal style="--delay: 200ms">
+            <span class="how-num">3</span>
+            <h3>Watch it grow</h3>
+            <p>Every habit adds a leaf. Keep a streak and it flowers. Miss a day and it naps, then perks back up.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section section-tint" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Features</p>
+          <h2 id="features-title">Small app. Thoughtful details.</h2>
+        </header>
+        <ul class="feature-grid">
+          <li class="feature" data-reveal>
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="18" height="8" rx="2"/></svg></span>
+            <h3>Home-screen widget</h3>
+            <p>Your plant lives on your home screen, so ticking a habit never means opening an app.</p>
+          </li>
+          <li class="feature" data-reveal style="--delay: 60ms">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 8-3 8h18s-3-1-3-8M10.5 20a1.7 1.7 0 0 0 3 0"/></svg></span>
+            <h3>Gentle reminders</h3>
+            <p>One nudge at the time you choose. Never a red badge, never a guilt trip.</p>
+          </li>
+          <li class="feature" data-reveal style="--delay: 120ms">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2v20M4.9 6.9l14.2 10.2M19.1 6.9 4.9 17.1M9 3.5l3 2 3-2M9 20.5l3-2 3 2"/></svg></span>
+            <h3>Streak freeze</h3>
+            <p>Sick, travelling, or just tired? Freeze your streak for a day and your plant stays put.</p>
+          </li>
+          <li class="feature" data-reveal>
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2 20c0-3.5 2.7-6 6-6s6 2.5 6 6M14 20c0-2.6 1.4-5 4-5s4 2 4 5"/></svg></span>
+            <h3>Shared gardens</h3>
+            <p>Plant side by side with up to eight friends. You see who showed up, not what they did.</p>
+          </li>
+          <li class="feature" data-reveal style="--delay: 60ms">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span>
+            <h3>Private by default</h3>
+            <p>No account needed. Your habits stay on your phone unless you choose to share a garden.</p>
+          </li>
+          <li class="feature" data-reveal style="--delay: 120ms">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 8.8a15 15 0 0 1 20 0M5.5 12.5a10 10 0 0 1 13 0M9 16a5 5 0 0 1 6 0M3 3l18 18"/></svg></span>
+            <h3>Works offline</h3>
+            <p>Tick habits on the train, in the woods, in airplane mode. It syncs when you’re back.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Weekly progress -->
+    <section class="section" aria-labelledby="week-title">
+      <div class="container week-grid">
+        <div class="week-copy" data-reveal>
+          <p class="eyebrow">Your week</p>
+          <h2 id="week-title">Progress you can see at a glance.</h2>
+          <p class="section-lede">A tiny weekly chart instead of a wall of stats. Enough to notice a pattern, never enough to obsess.</p>
+          <ul class="week-stats">
+            <li><strong>6 / 7</strong> days you showed up</li>
+            <li><strong>21</strong> habits ticked</li>
+            <li><strong>3</strong> new leaves</li>
+          </ul>
+        </div>
+
+        <figure class="chart-card" data-reveal data-chart>
+          <figcaption class="chart-title">This week <span>Habits done per day</span></figcaption>
+          <svg class="chart" viewBox="0 0 340 200" role="img" aria-labelledby="chart-desc">
+            <desc id="chart-desc">Habits completed each day this week, out of four: Monday 4, Tuesday 3, Wednesday 4, Thursday 2, Friday 4, Saturday 4, Sunday 0.</desc>
+            <g class="grid-lines" stroke="#0f3d2e" stroke-opacity=".08">
+              <path d="M20 20h310M20 60h310M20 100h310M20 140h310"/>
+            </g>
+            <g class="bars">
+              <rect class="bar" x="30" y="20" width="28" height="160" rx="8" style="--i: 0"/>
+              <rect class="bar bar-mid" x="74" y="60" width="28" height="120" rx="8" style="--i: 1"/>
+              <rect class="bar" x="118" y="20" width="28" height="160" rx="8" style="--i: 2"/>
+              <rect class="bar bar-low" x="162" y="100" width="28" height="80" rx="8" style="--i: 3"/>
+              <rect class="bar" x="206" y="20" width="28" height="160" rx="8" style="--i: 4"/>
+              <rect class="bar" x="250" y="20" width="28" height="160" rx="8" style="--i: 5"/>
+              <rect class="bar bar-empty" x="294" y="172" width="28" height="8" rx="4" style="--i: 6"/>
+            </g>
+            <path d="M20 180h310" stroke="#0f3d2e" stroke-opacity=".25"/>
+            <g class="chart-labels">
+              <text x="44" y="198">M</text><text x="88" y="198">T</text><text x="132" y="198">W</text>
+              <text x="176" y="198">T</text><text x="220" y="198">F</text><text x="264" y="198">S</text><text x="308" y="198">S</text>
+            </g>
+          </svg>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section-tint" aria-labelledby="love-title">
+      <div class="container">
+        <header class="section-head section-head-center" data-reveal>
+          <p class="eyebrow">Plant parents</p>
+          <h2 id="love-title">People (and plants) love it.</h2>
+        </header>
+
+        <div class="carousel" data-carousel aria-roledescription="carousel" aria-label="What people say about Pothos">
+          <div class="carousel-viewport">
+            <ul class="slides" data-slides aria-live="off">
+              <li class="slide" role="group" aria-roledescription="slide" aria-label="1 of 5">
+                <blockquote><p>“I’ve tried every habit app going. This is the first one I opened on day 40 without feeling guilty.”</p></blockquote>
+                <p class="slide-who"><span class="avatar a1" aria-hidden="true">A</span>Amara, nurse</p>
+              </li>
+              <li class="slide" role="group" aria-roledescription="slide" aria-label="2 of 5">
+                <blockquote><p>“My plant is called Kevin. Kevin is thriving. I drink water now.”</p></blockquote>
+                <p class="slide-who"><span class="avatar a2" aria-hidden="true">J</span>Jonah, student</p>
+              </li>
+              <li class="slide" role="group" aria-roledescription="slide" aria-label="3 of 5">
+                <blockquote><p>“The streak freeze saved me during exam week. No shame, just a sleepy plant.”</p></blockquote>
+                <p class="slide-who"><span class="avatar a3" aria-hidden="true">L</span>Lea, first-year medic</p>
+              </li>
+              <li class="slide" role="group" aria-roledescription="slide" aria-label="4 of 5">
+                <blockquote><p>“We share a garden as a family. My dad is weirdly competitive about stretching.”</p></blockquote>
+                <p class="slide-who"><span class="avatar a4" aria-hidden="true">S</span>Sam, eldest sibling</p>
+              </li>
+              <li class="slide" role="group" aria-roledescription="slide" aria-label="5 of 5">
+                <blockquote><p>“Four habits max sounded limiting. It turned out to be the whole point.”</p></blockquote>
+                <p class="slide-who"><span class="avatar a5" aria-hidden="true">P</span>Priyanka, designer</p>
+              </li>
+            </ul>
+          </div>
+          <div class="carousel-controls">
+            <button class="round-btn" type="button" data-prev aria-label="Previous testimonial">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+            </button>
+            <div class="dots" data-dots></div>
+            <button class="round-btn" type="button" data-next aria-label="Next testimonial">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+            </button>
+            <button class="pause-btn" type="button" data-pause aria-pressed="false">Pause</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <header class="section-head section-head-center" data-reveal>
+          <p class="eyebrow">Pricing</p>
+          <h2 id="pricing-title">Free to grow. Plus if you want more.</h2>
+        </header>
+
+        <div class="plans">
+          <article class="plan" data-reveal>
+            <h3>Free</h3>
+            <p class="plan-price"><strong>£0</strong> forever</p>
+            <p class="plan-desc">Everything you need to build four habits that stick.</p>
+            <a class="btn btn-outline btn-block" href="#download">Start growing</a>
+          </article>
+          <article class="plan plan-plus" data-reveal style="--delay: 100ms">
+            <p class="plan-tag">Most loved</p>
+            <h3>Plus</h3>
+            <p class="plan-price"><strong>£2.99</strong> a month, or £19.99 a year</p>
+            <p class="plan-desc">More plants, streak freezes and gardens with friends.</p>
+            <a class="btn btn-coral btn-block" href="#download">Try Plus free for 14 days</a>
+          </article>
+        </div>
+
+        <div class="compare-wrap" data-reveal>
+          <table class="compare">
+            <caption class="sr-only">Free and Plus compared</caption>
+            <thead>
+              <tr><th scope="col">Feature</th><th scope="col">Free</th><th scope="col">Plus</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Habits per day</th><td>4</td><td>4</td></tr>
+              <tr><th scope="row">Plant species</th><td>1</td><td>12</td></tr>
+              <tr><th scope="row">Home-screen widget</th><td><span class="yes" aria-label="Included">✓</span></td><td><span class="yes" aria-label="Included">✓</span></td></tr>
+              <tr><th scope="row">Streak freezes</th><td><span class="no" aria-label="Not included">–</span></td><td>3 a month</td></tr>
+              <tr><th scope="row">Shared gardens</th><td><span class="no" aria-label="Not included">–</span></td><td>Up to 8 friends</td></tr>
+              <tr><th scope="row">History</th><td>Last 4 weeks</td><td>Forever</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section class="download" id="download" aria-labelledby="download-title">
+      <div class="container">
+        <div class="download-box" data-reveal>
+          <h2 id="download-title">Your plant is waiting.</h2>
+          <p>Pothos is a concept app made for a design portfolio, so it isn’t in any store yet. The demo at the top of the page is the real thing, though.</p>
+          <a class="btn btn-butter" href="#demo">Play with the demo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">Good questions.</h2>
+        </header>
+        <div class="faq-list" data-reveal>
+          <details>
+            <summary>Why only four habits?</summary>
+            <p>Because four is the number people actually keep. You can swap any of them whenever you like.</p>
+          </details>
+          <details>
+            <summary>What happens if I miss a day?</summary>
+            <p>Your plant naps. It droops a little, then perks back up the next day you show up. Nothing ever dies.</p>
+          </details>
+          <details>
+            <summary>Do I need an account?</summary>
+            <p>No. Everything stays on your phone unless you turn on shared gardens.</p>
+          </details>
+          <details>
+            <summary>Can I name my plant?</summary>
+            <p>You have to. It’s the first thing the app asks. Kevin is a popular choice.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo" href="#top" aria-label="Pothos, back to top">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16 29V15" stroke="#0f3d2e" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M16 17C9 17 5 12 5 5c7 0 11 4 11 12Z" fill="#2f9e6f"/>
+          <path d="M16 15c0-6 4-10 11-10 0 6-4 10-11 10Z" fill="#7fe0b0"/>
+        </svg>
+        pothos
+      </a>
+      <p class="footer-credit">
+        Pothos is a fictional app. Concept site designed and built by
+        <a href="https://github.com/minty-web">minty-web</a>, © <span data-year>2026</span>.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
